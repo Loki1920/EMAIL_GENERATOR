@@ -12,6 +12,8 @@ from file_handler import FileHandler
 import pandas as pd
 
 
+
+
 # Function to validate URL
 def is_valid_url(url):
     regex = re.compile(
@@ -90,7 +92,7 @@ class ColdMailGenerator:
     def get_user_details(self):
         # Get user details: Full Name, Designation, Company Name
         st.header("User Details")
-        st.session_state.full_name = st.text_input("Enter your full name:", placeholder="Mandeep Singh")
+        st.session_state.full_name = st.text_input("Enter your full name:", placeholder="Lucky Tiwar")
         st.session_state.designation = st.text_input("Enter your designation:", placeholder="AI Engineer")
         st.session_state.company_name = st.text_input("Enter your company name:", placeholder="MSpace")
 
