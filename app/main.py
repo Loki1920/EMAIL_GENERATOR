@@ -1,6 +1,6 @@
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# __import__('pysqlite3')
+# import sys
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import streamlit as st
 from langchain_community.document_loaders import WebBaseLoader
 import re
@@ -35,7 +35,7 @@ class ColdMailGenerator:
         self.create_streamlit_app()
 
     def create_streamlit_app(self):
-        st.title("📧 Cold Mail Generator")
+        st.title("📧 Email Generator")
         
         # Initialize session state
         self.init_session_state()
