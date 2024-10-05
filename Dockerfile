@@ -1,5 +1,5 @@
 # ## THE OFFICIAL PYTHON 3.11
-# FROM python:3.11-slim
+# FROM python:3.12.4-slim
 
 # ## SET WORKING DIRECTORY TO /app
 # WORKDIR /app
@@ -25,7 +25,7 @@
 # CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"]
 
 ## Use the official Python 3.9 image
-FROM python:3.11
+FROM python:3.12.4
 
 # Set working directory to /code
 WORKDIR /code
